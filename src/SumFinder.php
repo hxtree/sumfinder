@@ -198,7 +198,7 @@ class SumFinder
 
                 // skip unnecessary iterations where sum will already be too low
                 if ($pair_sum < $this->sum) {
-                    //break;
+                    break;
                 }
 
                 // if operand sum equals desired sum add to list
