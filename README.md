@@ -1,5 +1,7 @@
 # SumFinder
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1809feca789a467bb0788240a9e07546)](https://app.codacy.com/manual/hxtree/sumfinder?utm_source=github.com&utm_medium=referral&utm_content=hxtree/sumfinder&utm_campaign=Badge_Grade_Dashboard)
+
 ***SumFinder*** accepts an array of integers and finds which operands sum equals the desired value.
 
 ![CI](https://github.com/hxtree/sumfinder/workflows/CI/badge.svg)
