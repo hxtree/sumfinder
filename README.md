@@ -2,6 +2,8 @@
 
 ***SumFinder*** accepts an array of integers and finds which operands sum equals the desired value.
 
+![CI](https://github.com/hxtree/sumfinder/workflows/CI/badge.svg)
+
 ## Usage
 ```php
 // setup SumFinder
