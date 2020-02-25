@@ -112,8 +112,6 @@ class SumFinder
         foreach ($integers as $key => $integer) {
             // if is int add to array
             if (!is_int($integer)) {
-                // TODO: switch from user notice to app logger
-                trigger_error('Invalid integer ' . str($integer) . 'passed to method ' . __METHOD__, E_USER_NOTICE);
                 continue;
             }
 
@@ -139,7 +137,6 @@ class SumFinder
                 $this->format = self::PRETTY;
                 break;
             default:
-                trigger_error('Invalid format set in method ' . __METHOD__, E_USER_ERROR);
                 return false;
         }
         return true;
