@@ -8,20 +8,30 @@
 
 ## Usage
 ```php
-// setup SumFinder
+require __DIR__ . '/../vendor/autoload.php';
+
 $sum_finder = new SumFinder();
 $sum_finder->setSumValue(10);
 $sum_finder->setIntArray(1,1,2,4,4,5,5,5,6,7,9);
-$sum_finder->setFormat(PRETTY);
 
-// output all pairs (includes duplicates and the reversed order pairs)
-echo $sum_finder->get(ALL_PAIRS) . PHP_EOL; /* returns [1,9], [1,9], [4,6], [4,6], [5,5], [5,5], [5,5], [5,5], [5,5], [5,5], [6,4], [6,4] */
+/*
+ * output all pairs (includes duplicates and the reversed order pairs)
+ * [1,9], [1,9], [4,6], [4,6], [5,5], [5,5], [5,5], [5,5], [5,5], [5,5]
+ */
+echo $sum_finder->getAllPairs() . PHP_EOL;
 
-// output unique pairs only once (removes the duplicate but includes the reversed ordered pairs),
-echo $sum_finder->get(UNIQUE_COMBO) . PHP_EOL;  /* returns [1,9], [4,6], [5,5], [6,4], [9,1] */
+/*
+ * output unique pairs only once (removes the duplicates but includes the reversed ordered pairs)
+ * [1,9], [4,6], [5,5], [6,4], [9,1]
+ */
+echo $sum_finder->getUniquePairs() . PHP_EOL;
 
-// output the same combo pair only once (removes the reversed ordered pairs).
-echo $sum_finder->get(UNIQUE) . PHP_EOL; /* returns [1,9], [4,6], [5,5] */
+/*
+ * output the same combo pair only once (removes the reversed ordered pairs)
+ * [1,9], [4,6], [5,5]
+ */
+echo $sum_finder->getComboPairs() . PHP_EOL;
+
 ```
 
 ## Installation

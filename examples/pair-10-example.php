@@ -33,4 +33,3 @@ echo $sum_finder->getUniquePairs() . PHP_EOL;
  * [1,9], [4,6], [5,5]
  */
 echo $sum_finder->getComboPairs() . PHP_EOL;
-
