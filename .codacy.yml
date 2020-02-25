@@ -1,0 +1,7 @@
+exclude_paths:
+  - 'examples/**/*'
+  - 'tests/**'
+  - 'vendor/**'
+  - 'build/**'
+  - 'docs/**'
+  - '**/*.md'
