@@ -1,0 +1,28 @@
+{
+    "name": "hxtree/sumfinder",
+    "description": "This program allows for an integer array to be passed in and will then output all the pairs that add up to the sum.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hxtree",
+            "email": "matthewheroux@gmail.com"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "SumFinder\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "friendsofphp/php-cs-fixer": "^2.17@dev"
+    },
+    "scripts": {
+        "test": [
+            "phpunit -d test=test --bootstrap vendor/autoload.php tests/."
+        ]
+
+    }
+}
